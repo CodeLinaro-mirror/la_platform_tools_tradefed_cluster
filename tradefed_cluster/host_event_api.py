@@ -109,7 +109,7 @@ class HostEventApi(remote.Service):
       a VoidMessage
     """
     # Convert the request message to json for the taskqueue payload
-    encoded_message = protojson.encode_message(request)  # pytype: disable=module-attr
+    encoded_message = protojson.encode_message(request)
     json_message = json.loads(encoded_message)
     host_events = json_message.get("host_events")
     if not host_events:

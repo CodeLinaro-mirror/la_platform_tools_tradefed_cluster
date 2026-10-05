@@ -369,7 +369,7 @@ def _PublishHostMessage(hostname):
   devices = device_manager.GetDevicesOnHost(hostname)
   host_message = datastore_entities.ToMessage(host)
   host_message.device_infos = [datastore_entities.ToMessage(d) for d in devices]
-  encoded_message = protojson.encode_message(host_message)  # pytype: disable=module-attr
+  encoded_message = protojson.encode_message(host_message)
   # TODO: find a better way to add event publish timestamp.
   msg_dict = json.loads(encoded_message)
   msg_dict['publish_timestamp'] = common.Now().isoformat()

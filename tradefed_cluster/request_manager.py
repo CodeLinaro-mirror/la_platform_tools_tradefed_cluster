@@ -202,7 +202,7 @@ def NotifyRequestState(request_id, force=False):
 @ndb.transactional(xg=True)
 def SendRequestStateNotification(request_id, message):
   request = GetRequest(request_id)
-  payload = zlib.compress(six.ensure_binary(protojson.encode_message(message)))  # pytype: disable=module-attr
+  payload = zlib.compress(six.ensure_binary(protojson.encode_message(message)))
   task_scheduler.AddTask(
       queue_name=common.OBJECT_EVENT_QUEUE, payload=payload, transactional=True,
       ndb_store_oversized_task=True)

@@ -152,7 +152,7 @@ class ClusterDeviceApi(remote.Service):
     """
     logging.debug("ClusterDeviceApi.NDBListDevices request: %s", request)
     if (request.elastic_query is not None and
-        env_config.CONFIG.use_elasticsearch):  # pytype: disable=attribute-error
+        env_config.CONFIG.use_elasticsearch):  # pyrefly: ignore[missing-attribute]
       elastic_query = json.loads(request.elastic_query)
       client = elasticsearch_client.ElasticsearchClient()
       result, prev_cursor, next_cursor = client.Search(

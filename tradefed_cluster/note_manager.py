@@ -144,7 +144,7 @@ def PublishMessage(device_note_message, event_type):
     )
     return
   device_note_message.publish_timestamp = _Now()
-  encoded_message = protojson.encode_message(device_note_message)  # pytype: disable=module-attr
+  encoded_message = protojson.encode_message(device_note_message)
   data = common.UrlSafeB64Encode(encoded_message)
   if event_type == common.PublishEventType.DEVICE_NOTE_EVENT:
     data_type = "deviceNote"
