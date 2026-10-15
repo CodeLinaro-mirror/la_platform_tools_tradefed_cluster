@@ -508,7 +508,7 @@ def BuildTestBench(
     if not isinstance(test_bench, TestBench):
       test_bench = TestBench.FromMessage(test_bench)
   else:
-    run_target = run_target.strip()
+    run_target = run_target.strip()  # pyrefly: ignore[missing-attribute]
     if not run_target.startswith('{'):
       test_bench = TestBench.FromLegacyString(
           run_target, cluster, test_bench_attributes)
@@ -1844,10 +1844,10 @@ class DeviceInfo(ndb.Expando):
   preconfigured_device_num_offset = ndb.IntegerProperty()
 
   def _post_put_hook(self, future):
-    if not env_config.CONFIG.use_elasticsearch:
+    if not env_config.CONFIG.use_elasticsearch:  # pyrefly: ignore[missing-attribute]
       return
     client = elasticsearch_client.ElasticsearchClient(
-        url=env_config.CONFIG.elasticsearch_server)
+        url=env_config.CONFIG.elasticsearch_server)  # pyrefly: ignore[missing-attribute, unexpected-keyword]
     device = client.GetDoc(common.ELASTIC_INDEX_DEVICES,
                            self.device_serial)
     if device and self.timestamp:
@@ -2196,7 +2196,7 @@ class ServiceConfig(ndb.Model):
     value: configuration value in string
     values: configuration values in string
   """
-  key = ndb.StringProperty(required=True)
+  key = ndb.StringProperty(required=True)  # pyrefly: ignore[bad-override]
   value = ndb.StringProperty()
   # Used for list objects
   values = ndb.StringProperty(repeated=True)
