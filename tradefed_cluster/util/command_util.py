@@ -19,7 +19,6 @@ from __future__ import division
 from __future__ import print_function
 
 import logging
-import pipes
 import re
 import shlex
 
@@ -159,7 +158,7 @@ class CommandLine(list):
   def __str__(self):
     tokens = []
     for token in self:
-      tokens.append(pipes.quote(token))
+      tokens.append(shlex.quote(token))
     return u" ".join(tokens)
 
   def ToTFString(self):
