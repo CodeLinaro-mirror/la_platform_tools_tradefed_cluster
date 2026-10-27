@@ -695,7 +695,6 @@ py_test(
         ":api_messages_lib",
         ":command_task_matcher_lib",
         ":testbed_dependent_test_lib",
-        third_party("mock"),
         "//third_party/py/google/protobuf:use_fast_cpp_protos",  # Automatically added go/proto_python_upb_flip
     ],
 )
@@ -725,7 +724,6 @@ py_test(
     deps = [
         ":api_test_lib",
         ":datastore_test_util_lib",
-        third_party("mock"),
         "//third_party/py/google/protobuf:use_fast_cpp_protos",  # Automatically added go/proto_python_upb_flip
     ],
 )
@@ -754,7 +752,6 @@ py_test(
     deps = [
         ":command_task_store_lib",
         ":testbed_dependent_test_lib",
-        third_party("mock"),
         "//third_party/py/google/protobuf:use_fast_cpp_protos",  # Automatically added go/proto_python_upb_flip
     ],
 )
@@ -1423,7 +1420,6 @@ py_test(
     deps = [
         ":api_messages_lib",
         ":host_event_lib",
-        third_party("mock"),
         "//third_party/py/google/protobuf:use_fast_cpp_protos",  # Automatically added go/proto_python_upb_flip
     ],
 )
@@ -1825,7 +1821,6 @@ py_test(
     deps = [
         ":server_lib",
         ":testbed_dependent_test_lib",
-        third_party("mock"),
         third_party("werkzeug"),
         "//third_party/py/google/protobuf:use_fast_cpp_protos",  # Automatically added go/proto_python_upb_flip
     ],

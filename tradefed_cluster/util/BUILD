@@ -38,7 +38,6 @@ py_test(
     strict_deps = False,
     deps = [
         ":command_util",
-        third_party("mock"),
         "//third_party/py/google/protobuf:use_fast_cpp_protos",  # Automatically added go/proto_python_upb_flip
     ],
 )
@@ -66,7 +65,6 @@ py_test(
     tags = ["not_run:arm"],
     deps = [
         ":email_sender_lib",
-        third_party("mock"),
         "//third_party/py/google/protobuf:use_fast_cpp_protos",  # Automatically added go/proto_python_upb_flip
         "//tradefed_cluster:testbed_dependent_test_lib",
     ],
@@ -221,7 +219,6 @@ py_test(
     tags = ["not_run:arm"],
     deps = [
         ":datastore_emulator_lib",
-        third_party("mock"),
         "//third_party/py/google/protobuf:use_fast_cpp_protos",  # Automatically added go/proto_python_upb_flip
     ],
 )
