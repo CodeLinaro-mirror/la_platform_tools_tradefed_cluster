@@ -19,9 +19,9 @@ from __future__ import division
 from __future__ import print_function
 
 import datetime
+from unittest import mock
 
 import hamcrest
-import mock
 from six.moves import range
 import webtest
 

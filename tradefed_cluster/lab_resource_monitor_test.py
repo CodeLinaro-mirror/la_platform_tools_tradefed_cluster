@@ -21,7 +21,7 @@ import base64
 import datetime
 import json
 
-import mock
+from unittest import mock
 
 
 from tradefed_cluster import common

@@ -15,8 +15,8 @@
 """Tests for google3.wireless.android.test_tools.tradefed_cluster.metric."""
 
 import datetime
+from unittest import mock
 
-import mock
 from tradefed_cluster import metric
 
 import unittest

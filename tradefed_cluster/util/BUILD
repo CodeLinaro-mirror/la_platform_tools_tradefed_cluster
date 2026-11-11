@@ -136,7 +136,6 @@ py_test(
         ":pubsub_client_lib",
         "//third_party/py/google/protobuf:use_fast_cpp_protos",  # Automatically added go/proto_python_upb_flip
         "//tradefed_cluster:testbed_dependent_test_lib",
-        third_party("mock"),
     ],
 )
 

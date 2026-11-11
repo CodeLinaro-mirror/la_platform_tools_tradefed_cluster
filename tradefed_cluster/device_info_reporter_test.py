@@ -18,8 +18,8 @@ import datetime
 import gzip
 import json
 import os.path
+from unittest import mock
 
-import mock
 import six
 import webtest
 

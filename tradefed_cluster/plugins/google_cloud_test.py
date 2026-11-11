@@ -16,9 +16,8 @@
 
 import datetime
 import unittest
+from unittest import mock
 import zlib
-
-import mock
 
 from google.cloud import tasks_v2
 from google3.google.protobuf import timestamp_pb2

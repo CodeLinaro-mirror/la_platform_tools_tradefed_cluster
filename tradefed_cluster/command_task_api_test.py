@@ -15,9 +15,9 @@
 """Tests for command_task_api module."""
 
 import datetime
+from unittest import mock
 
 import grpc
-import mock
 from protorpc import protojson
 
 from tradefed_cluster.util import ndb_shim as ndb

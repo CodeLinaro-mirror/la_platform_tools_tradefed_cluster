@@ -15,9 +15,9 @@
 
 import datetime
 import json
-import endpoints
+from unittest import mock
 
-import mock
+import endpoints
 from protorpc import protojson
 
 from tradefed_cluster.util import ndb_shim as ndb

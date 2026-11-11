@@ -28,7 +28,6 @@ py_test(
     deps = [
         ":app_manager_lib",
         third_party("absl/testing:absltest"),
-        third_party("mock"),
         "//third_party/py/google/protobuf:use_fast_cpp_protos",  # Automatically added go/proto_python_upb_flip
     ],
 )
@@ -54,7 +53,6 @@ py_test(
     deps = [
         ":file_storage_lib",
         third_party("absl/testing:absltest"),
-        third_party("mock"),
         "//third_party/py/google/protobuf:use_fast_cpp_protos",  # Automatically added go/proto_python_upb_flip
         "//tradefed_cluster:env_config_lib",
         "//tradefed_cluster/plugins:base_lib",
@@ -116,7 +114,6 @@ py_test(
     deps = [
         ":mailer_lib",
         third_party("absl/testing:absltest"),
-        third_party("mock"),
         "//third_party/py/google/protobuf:use_fast_cpp_protos",  # Automatically added go/proto_python_upb_flip
     ],
 )
@@ -150,6 +147,5 @@ py_test(
         "//tradefed_cluster:env_config_lib",
         "//tradefed_cluster:testbed_dependent_test_lib",
         "//tradefed_cluster/util:ndb_shim_lib",
-        third_party("mock"),
     ],
 )

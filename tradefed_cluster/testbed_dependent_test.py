@@ -19,9 +19,8 @@ import os
 import shutil
 import stat
 import tempfile
+from unittest import mock
 import uuid
-
-import mock
 
 
 from tradefed_cluster import env_config

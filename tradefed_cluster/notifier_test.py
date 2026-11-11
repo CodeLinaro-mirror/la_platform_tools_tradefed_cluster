@@ -16,9 +16,9 @@
 
 import datetime
 import json
+from unittest import mock
 import zlib
 
-import mock
 from protorpc import protojson
 import six
 import webtest

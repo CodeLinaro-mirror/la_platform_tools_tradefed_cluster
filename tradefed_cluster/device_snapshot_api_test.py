@@ -15,8 +15,8 @@
 """Tests for tradefed_cluster.device_snapshot_api."""
 
 import datetime
+from unittest import mock
 
-import mock
 from protorpc import protojson
 
 

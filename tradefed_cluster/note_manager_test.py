@@ -16,7 +16,7 @@
 import datetime
 import json
 
-import mock
+from unittest import mock
 
 from tradefed_cluster.util import ndb_shim as ndb
 

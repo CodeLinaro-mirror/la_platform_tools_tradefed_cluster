@@ -15,8 +15,8 @@
 """Tests for device_history_cleaner."""
 
 import datetime
+from unittest import mock
 
-import mock
 import webtest
 
 

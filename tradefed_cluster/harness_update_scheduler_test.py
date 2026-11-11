@@ -13,9 +13,9 @@
 # limitations under the License.
 """Tests for harness_update_scheduler."""
 import datetime
+from unittest import mock
 
 from absl.testing import parameterized
-import mock
 from tradefed_cluster import common
 from tradefed_cluster import datastore_entities
 from tradefed_cluster import datastore_test_util

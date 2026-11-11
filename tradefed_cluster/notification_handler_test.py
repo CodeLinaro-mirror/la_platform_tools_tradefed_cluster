@@ -15,10 +15,10 @@
 """Tests for Notifier Handler."""
 
 import json
+from unittest import mock
 import zlib
 
 from googleapiclient import errors
-import mock
 
 
 from tradefed_cluster import common

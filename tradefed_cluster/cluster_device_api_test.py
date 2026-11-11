@@ -14,8 +14,8 @@
 """Tests cluster_device_api."""
 
 import datetime
+from unittest import mock
 
-import mock
 from protorpc import protojson
 
 from tradefed_cluster.util import ndb_shim as ndb

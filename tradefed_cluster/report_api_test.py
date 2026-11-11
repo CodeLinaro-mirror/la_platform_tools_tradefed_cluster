@@ -15,8 +15,8 @@
 """Tests for tradefed_cluster.report_api."""
 
 import datetime
+from unittest import mock
 
-import mock
 from protorpc import protojson
 from tradefed_cluster import api_test
 from tradefed_cluster import datastore_entities

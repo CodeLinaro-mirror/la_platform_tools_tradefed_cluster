@@ -21,7 +21,7 @@ import copy
 import datetime
 import re
 
-import mock
+from unittest import mock
 
 from six.moves import range
 

@@ -14,7 +14,7 @@
 """Tests for Dimension API."""
 
 import datetime
-import mock
+from unittest import mock
 
 from protorpc import protojson
 from tradefed_cluster import api_messages

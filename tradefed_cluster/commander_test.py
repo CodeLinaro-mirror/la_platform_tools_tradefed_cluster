@@ -15,9 +15,9 @@
 """Tests for the commander module."""
 
 import datetime
+from unittest import mock
 
 import hamcrest
-import mock
 import webtest
 
 

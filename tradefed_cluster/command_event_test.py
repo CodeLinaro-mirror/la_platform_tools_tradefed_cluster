@@ -14,7 +14,8 @@
 
 """Tests for command_event."""
 
-import mock
+from unittest import mock
+
 from tradefed_cluster import command_error_type_config
 from tradefed_cluster import command_event
 from tradefed_cluster import command_event_test_util

@@ -21,9 +21,9 @@ from __future__ import print_function
 import datetime
 import json
 import logging
+from unittest import mock
 import zlib
 
-import mock
 from protorpc import protojson
 from six.moves import range
 

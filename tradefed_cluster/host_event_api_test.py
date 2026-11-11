@@ -16,7 +16,7 @@
 
 import datetime
 
-import mock
+from unittest import mock
 
 
 from tradefed_cluster import api_test

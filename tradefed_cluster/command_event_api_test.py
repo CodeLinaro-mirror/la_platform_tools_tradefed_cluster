@@ -14,7 +14,8 @@
 
 """Tests for command_event_api module."""
 
-import mock
+from unittest import mock
+
 from tradefed_cluster import api_test
 from tradefed_cluster import command_event_handler
 

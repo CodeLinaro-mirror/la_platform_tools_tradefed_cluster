@@ -18,8 +18,7 @@ import datetime
 import json
 import pickle
 import threading
-
-import mock
+from unittest import mock
 
 from tradefed_cluster import env_config
 from tradefed_cluster import testbed_dependent_test

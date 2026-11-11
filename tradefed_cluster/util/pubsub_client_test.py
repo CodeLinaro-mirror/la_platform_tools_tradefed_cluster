@@ -16,10 +16,9 @@
 
 import threading
 import unittest
+from unittest import mock
 
 from googleapiclient import errors
-import mock
-
 
 
 from tradefed_cluster import testbed_dependent_test

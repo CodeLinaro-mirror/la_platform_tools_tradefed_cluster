@@ -14,8 +14,9 @@
 
 """Unit tests for file_storage module."""
 
+from unittest import mock
+
 from absl.testing import absltest
-import mock
 
 
 from tradefed_cluster import env_config

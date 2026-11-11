@@ -62,7 +62,6 @@ py_test(
     strict_deps = False,
     deps = [
         ":google_cloud_lib",
-        third_party("mock"),
         "//third_party/py/google/protobuf:use_fast_cpp_protos",  # Automatically added go/proto_python_upb_flip
     ],
 )

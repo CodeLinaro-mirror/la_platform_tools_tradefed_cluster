@@ -2,8 +2,8 @@
 
 import datetime
 import json
+from unittest import mock
 
-import mock
 from tradefed_cluster import command_event_test_util
 from tradefed_cluster import commander
 from tradefed_cluster import common
